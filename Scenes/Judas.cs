@@ -9,7 +9,7 @@ public class Judas : KinematicBody2D
 
     public Vector2 velocity = new Vector2();
 
-    public static bool dash;
+    public static bool shoot;
 
     public float health = 10;
 
@@ -49,17 +49,17 @@ public class Judas : KinematicBody2D
 
     public override void _Ready()
     {
-        Bulletscene = GD.Load<PackedScene>("res://Bullet.tscn");
+        Bulletscene = GD.Load<PackedScene>("res://Scenes/Bullet.tscn");
 
         Timer timer = this.GetNode<Timer>("Timer");
-        timer.WaitTime = 1;
+        timer.WaitTime = (float) 1;
         timer.Connect("timeout", this, "on_timeout");
         timer.Start();
     }
 
     public static void on_timeout()
     {
-        dash = true;
+        shoot = true;
     }
 
     public override void _UnhandledInput(InputEvent @event)
@@ -68,19 +68,14 @@ public class Judas : KinematicBody2D
 
         if (@event is InputEventMouseButton mouseButton)
         {
-            if (mouseButton.ButtonIndex == (int)ButtonList.Left && mouseButton.Pressed)
+            if (shoot && mouseButton.ButtonIndex == (int)ButtonList.Left && mouseButton.Pressed)
             {
                 Bullet bullet = (Bullet)Bulletscene.Instance();
                 bullet.Position = Position;
                 bullet.Rotation = Rotation;
                 GetParent().AddChild(bullet);
                 GetTree().SetInputAsHandled();
-            }
-            if (mouseButton.ButtonIndex == (int)ButtonList.Right && mouseButton.Pressed && dash)
-            {
-                Vector2 moveDirection = (GetGlobalMousePosition() - Position).Normalized();
-                Position += moveDirection * 250;
-                dash = false;
+                shoot = false;
             }
         }
 

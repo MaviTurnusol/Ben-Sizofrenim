@@ -7,3 +7,11 @@ D:\Godod\Ben Sizofrenim\.mono\temp\obj\Debug\Ben Sizofrenim.AssemblyInfo.cs
 D:\Godod\Ben Sizofrenim\.mono\temp\obj\Debug\Ben Sizofrenim.csproj.CoreCompileInputs.cache
 D:\Godod\Ben Sizofrenim\.mono\temp\obj\Debug\Ben Sizofrenim.dll
 D:\Godod\Ben Sizofrenim\.mono\temp\obj\Debug\Ben Sizofrenim.pdb
+C:\Users\Mert\OneDrive\Belgeler\GitHub\Ben-Sizofrenim\.mono\temp\bin\Debug\Ben Sizofrenim.dll
+C:\Users\Mert\OneDrive\Belgeler\GitHub\Ben-Sizofrenim\.mono\temp\bin\Debug\Ben Sizofrenim.pdb
+C:\Users\Mert\OneDrive\Belgeler\GitHub\Ben-Sizofrenim\.mono\temp\obj\Debug\Ben Sizofrenim.csprojAssemblyReference.cache
+C:\Users\Mert\OneDrive\Belgeler\GitHub\Ben-Sizofrenim\.mono\temp\obj\Debug\Ben Sizofrenim.AssemblyInfoInputs.cache
+C:\Users\Mert\OneDrive\Belgeler\GitHub\Ben-Sizofrenim\.mono\temp\obj\Debug\Ben Sizofrenim.AssemblyInfo.cs
+C:\Users\Mert\OneDrive\Belgeler\GitHub\Ben-Sizofrenim\.mono\temp\obj\Debug\Ben Sizofrenim.csproj.CoreCompileInputs.cache
+C:\Users\Mert\OneDrive\Belgeler\GitHub\Ben-Sizofrenim\.mono\temp\obj\Debug\Ben Sizofrenim.dll
+C:\Users\Mert\OneDrive\Belgeler\GitHub\Ben-Sizofrenim\.mono\temp\obj\Debug\Ben Sizofrenim.pdb

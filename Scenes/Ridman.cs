@@ -28,7 +28,7 @@ public class Ridman : KinematicBody2D
 
     public override void _Process(float delta)
     {
-        pluer = GetTree().Root.GetNode("World").GetNode<KinematicBody2D>("Mario").Position;
+        pluer = GetTree().Root.GetNode("World").GetNode<KinematicBody2D>("Judas").Position;
 
         var rng = new RandomNumberGenerator();
         rng.Randomize();
