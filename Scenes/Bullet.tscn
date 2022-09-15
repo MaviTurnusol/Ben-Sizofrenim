@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/Bullet.cs" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 8.48496, 28.9718 )
+
+[node name="Bullet" type="Node2D"]
+position = Vector2( 244, 147 )
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0.11876, -0.0527945 )
+rotation = 1.5708
+scale = Vector2( 0.265922, 0.904596 )
+texture = ExtResource( 2 )
+
+[node name="Area2D" type="Area2D" parent="."]
+rotation = 1.5708
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 1.01514e-07, -0.0246832 )
+shape = SubResource( 1 )
