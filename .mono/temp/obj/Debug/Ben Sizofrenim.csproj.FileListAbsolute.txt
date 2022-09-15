@@ -1,0 +1,9 @@
+D:\Godod\Ben Sizofrenim\.mono\temp\bin\Debug\Ben Sizofrenim.dll
+D:\Godod\Ben Sizofrenim\.mono\temp\bin\Debug\Ben Sizofrenim.pdb
+D:\Godod\Ben Sizofrenim\.mono\temp\obj\Debug\Ben Sizofrenim.csproj.AssemblyReference.cache
+D:\Godod\Ben Sizofrenim\.mono\temp\obj\Debug\Ben Sizofrenim.GeneratedMSBuildEditorConfig.editorconfig
+D:\Godod\Ben Sizofrenim\.mono\temp\obj\Debug\Ben Sizofrenim.AssemblyInfoInputs.cache
+D:\Godod\Ben Sizofrenim\.mono\temp\obj\Debug\Ben Sizofrenim.AssemblyInfo.cs
+D:\Godod\Ben Sizofrenim\.mono\temp\obj\Debug\Ben Sizofrenim.csproj.CoreCompileInputs.cache
+D:\Godod\Ben Sizofrenim\.mono\temp\obj\Debug\Ben Sizofrenim.dll
+D:\Godod\Ben Sizofrenim\.mono\temp\obj\Debug\Ben Sizofrenim.pdb
