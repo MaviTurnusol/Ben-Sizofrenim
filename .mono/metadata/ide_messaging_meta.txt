@@ -1,2 +1,2 @@
-﻿59544
+﻿57415
 C:/Users/Mert/OneDrive/Masaüstü/Godot_v3.5-stable_mono_win64/Godot_v3.5-stable_mono_win64.exe

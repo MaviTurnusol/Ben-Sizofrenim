@@ -14,9 +14,14 @@ public class Doge : KinematicBody2D
 
     public override void _Ready()
     {
-        
+        var timer = GetNode<Timer>("Timer");
+        timer.Connect("timeout", this, "ontimeout");
     }
 
+    private void OnTimeout()
+    {
+        QueueFree();
+    }
 
     public override void _Process(float delta)
     {
@@ -26,8 +31,10 @@ public class Doge : KinematicBody2D
 
         if (judas.Position.x - Position.x <= 300 && judas.Position.y - Position.y <= 300)
         {
+            var timer = GetNode<Timer>("Timer");
             sex = sex.Normalized() * dashspeed;
             sex = MoveAndSlide(sex);
+            timer.Start(1);
         }
         else
         {
@@ -36,9 +43,5 @@ public class Doge : KinematicBody2D
             Vector2 moveDirection = (judas.Position - Position).Normalized();
             Position += moveDirection * moveAmount;
         } 
-        if (Position == judas.Position)
-        {
-            QueueFree();
-        }
     }
 }
