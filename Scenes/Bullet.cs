@@ -30,9 +30,9 @@ public class Bullet : Node2D
     }
     public void Oncollision(Area2D with)
     {
-        if (with.GetParent() is Ridman ridman)
+        if (with.GetParent() is Doge doge)
         {
-            ridman.health1 -= 1;
+            doge.health1 -= 1;
             QueueFree();
 
         }

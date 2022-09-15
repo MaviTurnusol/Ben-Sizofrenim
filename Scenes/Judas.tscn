@@ -6,13 +6,10 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 32, 32 )
 
-[sub_resource type="OccluderPolygon2D" id=2]
-cull_mode = 1
-polygon = PoolVector2Array( 32, -32, -32, -32, -32, 31, 32, 32 )
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 31, 31.5 )
 
 [node name="Judas" type="KinematicBody2D"]
-light_mask = 2
-position = Vector2( 512, 0 )
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -23,5 +20,9 @@ shape = SubResource( 1 )
 
 [node name="Timer" type="Timer" parent="."]
 
-[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
-occluder = SubResource( 2 )
+[node name="Area2D" type="Area2D" parent="."]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 0, 0.5 )
+shape = SubResource( 2 )
