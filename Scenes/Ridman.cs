@@ -16,7 +16,7 @@ public class Ridman : KinematicBody2D
     static int speed = 0;
     public static Vector2 pluer;
     static int sex2 = 0;
-    public float health1 = 30;
+    public float health2 = 30;
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
     {
@@ -75,7 +75,7 @@ public class Ridman : KinematicBody2D
         }
         dis = MoveAndSlide(dis);
 
-        if (health1 <= 0)
+        if (health2 <= 0)
         {
             QueueFree();
         }

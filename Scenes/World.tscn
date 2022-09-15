@@ -8,5 +8,5 @@
 [node name="Judas" parent="." instance=ExtResource( 2 )]
 position = Vector2( 889, 319 )
 
-[node name="Node2D" parent="." instance=ExtResource( 1 )]
-position = Vector2( 111, 168 )
+[node name="Doge" parent="." instance=ExtResource( 1 )]
+position = Vector2( 69, 81 )

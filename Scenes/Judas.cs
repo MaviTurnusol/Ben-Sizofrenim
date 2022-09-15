@@ -11,7 +11,20 @@ public class Judas : KinematicBody2D
 
     public static bool shoot;
 
-    public float health = 10;
+    public float health = 20;
+
+
+    public float Health
+    {
+        get
+        {
+            return health;
+        }
+        set
+        {
+            health = value;
+        }
+    }
 
     public void GetInput()
     {
