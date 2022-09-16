@@ -13,7 +13,14 @@ public class Judas : KinematicBody2D
 
     public float health = 20;
 
+    public static Vector2 mousepos;
+    
+    static Sprite amseverim;
 
+    static Vector2 vRight;
+    static Vector2 vLeft;
+    static Vector2 vUp;
+    static Vector2 vDown;
     public float Health
     {
         get
@@ -32,9 +39,11 @@ public class Judas : KinematicBody2D
 
         if (Input.IsKeyPressed((int)KeyList.D))
             velocity.x += 1;
+            LookAt(vRight);
 
         if (Input.IsKeyPressed((int)KeyList.A))
             velocity.x -= 1;
+            LookAt(vLeft);
 
         if (Input.IsKeyPressed((int)KeyList.S))
             velocity.y += 1;
@@ -44,7 +53,7 @@ public class Judas : KinematicBody2D
 
         velocity = velocity.Normalized() * speed;
 
-        Rotation = (GetGlobalMousePosition() - GlobalPosition).Angle();
+        //Rotation = (GetGlobalMousePosition() - GlobalPosition).Angle();
 
     }
 
@@ -57,7 +66,11 @@ public class Judas : KinematicBody2D
         {
             QueueFree();
         }
-
+        
+        vRight = new Vector2(Position.x+10, Position.y);
+        vLeft = new Vector2(Position.x-10, Position.y);
+        vUp = new Vector2(Position.x, Position.y-10);
+        vDown = new Vector2(Position.x, Position.y+10);
     }
 
     public override void _Ready()
@@ -68,6 +81,8 @@ public class Judas : KinematicBody2D
         timer.WaitTime = (float) 1;
         timer.Connect("timeout", this, "on_timeout");
         timer.Start();
+
+        amseverim = GetChild<Sprite>(0);
     }
 
     public static void on_timeout()
@@ -86,7 +101,7 @@ public class Judas : KinematicBody2D
                 Bullet bullet = (Bullet)Bulletscene.Instance();
                 bullet.Position = Position;
                 bullet.Rotation = Rotation;
-                GetParent().AddChild(bullet);
+                //GetParent().AddChild(bullet);
                 GetTree().SetInputAsHandled();
                 shoot = false;
             }
