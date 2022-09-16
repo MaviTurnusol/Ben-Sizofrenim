@@ -2,24 +2,27 @@
 
 [ext_resource path="res://Scenes/Doge.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Judas.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Rooms/Room0.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/Gun.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/Lamp.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Rooms/Room1.tscn" type="PackedScene" id=6]
 
 [node name="World" type="Node2D"]
 
-[node name="TileMap" parent="." instance=ExtResource( 3 )]
-show_behind_parent = true
+[node name="Room1" parent="." instance=ExtResource( 6 )]
 
-[node name="Judas" parent="." instance=ExtResource( 2 )]
-position = Vector2( 889, 450 )
+[node name="Lamp" parent="." instance=ExtResource( 5 )]
+position = Vector2( 183, 389 )
+scale = Vector2( 4, 4 )
+
+[node name="Lamp2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 101, 1013 )
+scale = Vector2( 4, 4 )
 
 [node name="Doge" parent="." instance=ExtResource( 1 )]
 position = Vector2( 69, 81 )
 
+[node name="Judas" parent="." instance=ExtResource( 2 )]
+position = Vector2( 889, 450 )
+
 [node name="Gun" parent="." instance=ExtResource( 4 )]
 scale = Vector2( 5, 5 )
-
-[node name="Lamp" parent="." instance=ExtResource( 5 )]
-position = Vector2( 196, 392 )
-scale = Vector2( 4, 4 )
