@@ -23,6 +23,9 @@ common/drop_mouse_on_gui_input_disabled=true
 2d_render/layer_1="Judas"
 2d_render/layer_2="Doge"
 2d_render/layer_3="Bullet"
+2d_render/layer_4="Coward"
+2d_render/layer_5="Cowardbullet"
+2d_render/layer_6="isidro"
 
 [physics]
 
