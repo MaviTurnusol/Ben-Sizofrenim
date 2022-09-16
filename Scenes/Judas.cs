@@ -14,6 +14,8 @@ public class Judas : KinematicBody2D
     public float health = 20;
 
     public static Vector2 mousepos;
+
+    public static Vector2 yer;
     
     static Sprite amseverim;
 
@@ -53,7 +55,6 @@ public class Judas : KinematicBody2D
 
         velocity = velocity.Normalized() * speed;
 
-        //Rotation = (GetGlobalMousePosition() - GlobalPosition).Angle();
 
     }
 
@@ -71,6 +72,7 @@ public class Judas : KinematicBody2D
         vLeft = new Vector2(Position.x-10, Position.y);
         vUp = new Vector2(Position.x, Position.y-10);
         vDown = new Vector2(Position.x, Position.y+10);
+
     }
 
     public override void _Ready()
@@ -89,6 +91,8 @@ public class Judas : KinematicBody2D
     {
         shoot = true;
     }
+
+ 
 
     public override void _UnhandledInput(InputEvent @event)
     {
