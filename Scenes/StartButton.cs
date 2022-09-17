@@ -10,6 +10,6 @@ public class StartButton : Button
 
     public override void _Pressed()
     {
-        GetTree().ChangeScene("res://Scenes/World.tscn");
+        GetTree().ChangeScene("res://Scenes/Intro.tscn");
     }
 }
