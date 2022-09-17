@@ -33,4 +33,4 @@ scale = Vector2( 5, 5 )
 position = Vector2( 1267, 489 )
 
 [node name="Coward" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1196, 66 )
+position = Vector2( 564, 396 )

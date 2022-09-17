@@ -28,26 +28,17 @@ public class Coward : KinematicBody2D
 
     public override void _Process(float delta)
     {
-        move = Position;
-
         var judas = GetNode<Judas>("../Judas");
 
+        move = judas.Position * -1;
 
-        if (judas.Position.x - Position.x <= 225 && judas.Position.y - Position.y <= 225)
+        if (kac == true)
         {
-            float speed = 9000;
+            float speed = 200;
             float moveAmount = delta * speed;
-            Vector2 moveDirection = (judas.Position - Position).Normalized();
-            move = moveDirection * moveAmount * -1;
-            move = MoveAndSlide(move);
-        }
-        if (kac)
-        {
-            float speed = 9000;
-            float moveAmount = delta * speed;
-            Vector2 moveDirection = (judas.Position - Position).Normalized();
-            move = moveDirection * moveAmount * -1;
-            move = MoveAndSlide(move);
+            Vector2 MoveDirection = new Vector2(Position.x-judas.Position.x, Position.y-judas.Position.y);
+            MoveDirection = MoveDirection.Normalized() * speed;
+            MoveDirection = MoveAndSlide(MoveDirection);
         }
         if (health2 <= 0)
         {

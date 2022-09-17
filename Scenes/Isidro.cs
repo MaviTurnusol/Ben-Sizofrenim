@@ -34,6 +34,7 @@ public class Isidro : KinematicBody2D
         Timer timer2 = this.GetNode<Timer>("Timer");
         timer2.WaitTime = 1;
         timer2.Connect("timeout", this, "on_timeout2");
+        timer2.Start();
     }
     public static void on_timeout()
     {
@@ -52,25 +53,22 @@ public class Isidro : KinematicBody2D
 
         var judas = GetNode<Judas>("../Judas");
 
-        if (judas.Position.x - Position.x <= 225 && judas.Position.y - Position.y <= 225)
+        if (Math.Abs(judas.Position.x - Position.x) <= 350 && Math.Abs(judas.Position.y - Position.y) <= 350 )
         {
-            timer2.Start();
-            kac = true;
+            kac = false;
 
-            float speed = 9000;
+            float speed = 200;
             float moveAmount = delta * speed;
-            Vector2 moveDirection = (judas.Position - Position).Normalized();
-            move = moveDirection * moveAmount * -1;
-            move = MoveAndSlide(move);
+            Vector2 MoveDirection = new Vector2(Position.x-judas.Position.x, Position.y-judas.Position.y);
+            MoveDirection = MoveDirection.Normalized() * speed;
+            MoveDirection = MoveAndSlide(MoveDirection);
         }
-
         if (kac)
         {
             float speed = 9000;
             float moveAmount = delta * speed;
             Vector2 moveDirection = (judas.Position - Position).Normalized();
             move = moveDirection * moveAmount * -1;
-            move = MoveAndSlide(move);
         }
 
         if (judas.health > 0 && shoot)
