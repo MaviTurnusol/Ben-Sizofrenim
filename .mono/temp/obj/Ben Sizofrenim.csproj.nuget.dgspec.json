@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mert\\OneDrive\\Belgeler\\GitHub\\Ben-Sizofrenim\\Ben Sizofrenim.csproj": {}
+    "C:\\USERS\\MERT\\ONEDRIVE\\BELGELER\\GITHUB\\BEN-SIZOFRENIM\\Ben Sizofrenim.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mert\\OneDrive\\Belgeler\\GitHub\\Ben-Sizofrenim\\Ben Sizofrenim.csproj": {
+    "C:\\USERS\\MERT\\ONEDRIVE\\BELGELER\\GITHUB\\BEN-SIZOFRENIM\\Ben Sizofrenim.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mert\\OneDrive\\Belgeler\\GitHub\\Ben-Sizofrenim\\Ben Sizofrenim.csproj",
+        "projectUniqueName": "C:\\USERS\\MERT\\ONEDRIVE\\BELGELER\\GITHUB\\BEN-SIZOFRENIM\\Ben Sizofrenim.csproj",
         "projectName": "Ben Sizofrenim",
-        "projectPath": "C:\\Users\\Mert\\OneDrive\\Belgeler\\GitHub\\Ben-Sizofrenim\\Ben Sizofrenim.csproj",
+        "projectPath": "C:\\USERS\\MERT\\ONEDRIVE\\BELGELER\\GITHUB\\BEN-SIZOFRENIM\\Ben Sizofrenim.csproj",
         "packagesPath": "C:\\Users\\Mert\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mert\\OneDrive\\Belgeler\\GitHub\\Ben-Sizofrenim\\.mono\\temp\\obj\\",
+        "outputPath": "C:\\USERS\\MERT\\ONEDRIVE\\BELGELER\\GITHUB\\BEN-SIZOFRENIM\\.mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mert\\AppData\\Roaming\\NuGet\\NuGet.Config",
