@@ -6,9 +6,32 @@ public class Intro : Node2D
 
     public override void _Ready()
     {
-        var label = GetNode<Label>("Label");
-        label.Text = ("Ben");
+        Timer timer = this.GetNode<Timer>("Timer");
+        timer.WaitTime = (float)2;
+        timer.Connect("timeout", this, "on_timeout");
+        timer.Start();
+
+        Timer timer2 = this.GetNode<Timer>("Timer2");
+        timer2.WaitTime = (float)2;
+        timer2.Connect("timeout", this, "on_timeout2");
     }
 
+    public void on_timeout()
+    {
+        Timer timer = this.GetNode<Timer>("Timer");
+        Timer timer2 = this.GetNode<Timer>("Timer2");
+        var label = GetNode<Label>("Label");
+        label.Text = ("I am a good person");
+        timer.Stop();
+        timer2.Start();
+    }
+
+    public void on_timeout2()   
+    {
+        Timer timer2 = this.GetNode<Timer>("Timer2");
+        var label = GetNode<Label>("Label");
+        label.Text = ("therefore i have to destroy the evil");
+        timer2.Stop();
+    }
 
 }
