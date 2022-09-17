@@ -22,7 +22,6 @@ public class Intro : Node2D
 
     public void on_timeout()
     {
-        Mabel.Text = "ben sinan ugur yarak severim";
     }
 //  // Called every frame. 'delta' is the elapsed time since the previous frame.
     public override void _Process(float delta)
