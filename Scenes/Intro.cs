@@ -35,7 +35,7 @@ public class Intro : Node2D
         Timer timer3 = this.GetNode<Timer>("Timer3");
         Timer timer2 = this.GetNode<Timer>("Timer2");
         var label = GetNode<Label>("Label");
-        label.Text = ("therefore i have to destroy the evil");
+        label.Text = ("therefore i have to destroy the evil...");
         timer2.Stop();
         timer3.Start();
     }
@@ -43,5 +43,5 @@ public class Intro : Node2D
     {
         GetTree().ChangeScene("res://Scenes/World.tscn");
     }
-
+    // eyoo
 }
