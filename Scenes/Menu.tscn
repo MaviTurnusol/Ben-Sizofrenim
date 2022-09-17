@@ -1,18 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Sprites/Machikado-Mazoku-simple-background-yuri-blue-Yoshida-Yuuko-Chiyoda-Momo-1693207-wallhere.com.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/StartButton.cs" type="Script" id=2]
 [ext_resource path="res://Scenes/ExitButton.cs" type="Script" id=3]
-[ext_resource path="res://AbhayaLibre-Bold.ttf" type="DynamicFontData" id=4]
 
 [sub_resource type="Theme" id=1]
 /colors/Start = Color( 0.913725, 0.784314, 0.921569, 1 )
-
-[sub_resource type="DynamicFont" id=2]
-font_data = ExtResource( 4 )
-
-[sub_resource type="DynamicFont" id=3]
-font_data = ExtResource( 4 )
 
 [node name="Menu" type="Control"]
 anchor_right = 1.0
@@ -22,29 +15,27 @@ margin_top = 424.0
 rect_scale = Vector2( 4, 4 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-margin_left = 130.0
-margin_top = 60.0
-margin_right = 280.0
-margin_bottom = 140.0
+margin_left = -15.0
+margin_top = -14.0
+margin_right = 70.0
+margin_bottom = 30.0
 theme = SubResource( 1 )
 
 [node name="StartButton" type="Button" parent="VBoxContainer"]
-margin_right = 150.0
-margin_bottom = 26.0
-custom_fonts/font = SubResource( 2 )
-text = "Start"
+margin_right = 85.0
+margin_bottom = 20.0
+text = "Basla"
 script = ExtResource( 2 )
 
 [node name="ExitButton" type="Button" parent="VBoxContainer"]
-margin_top = 30.0
-margin_right = 150.0
-margin_bottom = 56.0
-custom_fonts/font = SubResource( 3 )
-text = "Exit"
+margin_top = 24.0
+margin_right = 85.0
+margin_bottom = 44.0
+text = "Cik"
 script = ExtResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="."]
 show_behind_parent = true
-position = Vector2( 63.5002, 31.625 )
-scale = Vector2( 0.250781, 0.254861 )
+position = Vector2( -49.25, -31 )
+scale = Vector2( 0.133333, 0.138889 )
 texture = ExtResource( 1 )
