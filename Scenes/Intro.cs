@@ -3,29 +3,44 @@ using System;
 
 public class Intro : Node2D
 {
-    // Declare member variables here. Examples:
-    // private int a = 2;
-    // private string b = "text";
-    Label Mabel;
-    bool labeliyidir = true;
-    // Called when the node enters the scene tree for the first time.
+
     public override void _Ready()
     {
-        Mabel = GetNode<Label>("Label");
-        Mabel.Text = "ben sinan ugur cocuk severim (ayak) severim";
-
         Timer timer = this.GetNode<Timer>("Timer");
-        timer.WaitTime = 3;
+        timer.WaitTime = (float)2;
         timer.Connect("timeout", this, "on_timeout");
         timer.Start();
+
+        Timer timer2 = this.GetNode<Timer>("Timer2");
+        timer2.WaitTime = (float)2;
+        timer2.Connect("timeout", this, "on_timeout2");
+
+        Timer timer3 = this.GetNode<Timer>("Timer3");
+        timer3.WaitTime = (float)2;
+        timer3.Connect("timeout", this, "on_timeout3");
     }
 
     public void on_timeout()
     {
+        Timer timer = this.GetNode<Timer>("Timer");
+        Timer timer2 = this.GetNode<Timer>("Timer2");
+        var label = GetNode<Label>("Label");
+        label.Text = ("I am a good person");
+        timer.Stop();
+        timer2.Start();
     }
-//  // Called every frame. 'delta' is the elapsed time since the previous frame.
-    public override void _Process(float delta)
+
+    public void on_timeout2()   
     {
-        
+        Timer timer2 = this.GetNode<Timer>("Timer2");
+        var label = GetNode<Label>("Label");
+        label.Text = ("therefore i have to destroy the evil");
+        timer2.Stop();
     }
+
+    public void on_timeout3()   
+    {
+        GetTree().ChangeScene("res://Scenes/World.tscn");
+    }
+
 }

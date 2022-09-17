@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "aEiJbOrb8JvaK3zSVLI73Br1PhylxwQnkOrQMBAh1tOkccMbgh/LFGmX2QchUO/F4maWb5yUT6fQYRISZhNs0Q==",
+  "dgSpecHash": "+1AuuISysXFeEWbukiRoNHFbVTEWQ7XC3LQUBw1wjJjHdbxh9EYZRUszZrrlIunSl9u0MvtsiCRKfCIfIFRT5Q==",
   "success": true,
-  "projectFilePath": "C:\\USERS\\MERT\\ONEDRIVE\\BELGELER\\GITHUB\\BEN-SIZOFRENIM\\Ben Sizofrenim.csproj",
+  "projectFilePath": "D:\\Godod\\Ben Sizofrenim\\Ben Sizofrenim.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Önbellek dosyası D:\\Godod\\Ben Sizofrenim\\.mono\\temp\\obj\\project.nuget.cache okunurken bir sorun oluştu : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

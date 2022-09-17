@@ -27,5 +27,3 @@ custom_fonts/font = SubResource( 1 )
 [node name="Timer" type="Timer" parent="."]
 
 [node name="Timer2" type="Timer" parent="."]
-
-[node name="Timer3" type="Timer" parent="."]
