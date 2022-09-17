@@ -14,10 +14,6 @@ config/name="Ben Sizofrenim"
 run/main_scene="res://Scenes/Menu.tscn"
 config/icon="res://icon.png"
 
-[display]
-
-window/size/borderless=true
-
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
