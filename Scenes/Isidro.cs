@@ -55,7 +55,7 @@ public class Isidro : KinematicBody2D
 
         if (Math.Abs(judas.Position.x - Position.x) <= 350 && Math.Abs(judas.Position.y - Position.y) <= 350 )
         {
-            kac = false;
+            kac = true;
 
             float speed = 200;
             float moveAmount = delta * speed;
@@ -65,10 +65,11 @@ public class Isidro : KinematicBody2D
         }
         if (kac)
         {
-            float speed = 9000;
+            float speed = 200;
             float moveAmount = delta * speed;
-            Vector2 moveDirection = (judas.Position - Position).Normalized();
-            move = moveDirection * moveAmount * -1;
+            Vector2 MoveDirection = new Vector2(Position.x - judas.Position.x, Position.y - judas.Position.y);
+            MoveDirection = MoveDirection.Normalized() * speed;
+            MoveDirection = MoveAndSlide(MoveDirection);
         }
 
         if (judas.health > 0 && shoot)
